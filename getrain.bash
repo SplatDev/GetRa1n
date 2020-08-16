@@ -36,6 +36,7 @@ apt update
 echo "Installing checkra1n..."
 apt install -y checkra1n
 read -n1 -p "Start checkra1n? [Y/n] "
+
 if [[ $REPLY == 'y' ]]
 then
 	checkra1n
