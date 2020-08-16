@@ -1,6 +1,5 @@
 #!/usr/bin/bash
 
-echoerr() { echo "$@" 1>&2; }
 checkDeb() {
 	if ! command -v apt &> /dev/null
 	then
@@ -35,11 +34,13 @@ apt-key adv --fetch-keys https://assets.checkra.in/debian/archive.key
 echo "Updating repositories..."
 apt update
 echo "Installing checkra1n..."
-apt-get install -y checkra1n
+apt install -y checkra1n
 read -n1 -p "Start checkra1n? [Y/n] "
-if [[ $REPLY == y ]]; then
+if [[ $REPLY == 'y' ]]
+then
 	checkra1n
-elif [[ $REPLY == n ]]; then
+elif [[ $REPLY == 'n' ]]
+then
 	exit 0
 else
 	checkra1n
