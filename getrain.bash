@@ -1,5 +1,10 @@
 #!/usr/bin/bash
 
+appName="getra1n"
+appSite="getra1n.xyz"
+appVer="V1.0 Beta 1"
+appDevs=( OPtimal Splat )
+
 checkDeb() {
 	if ! command -v apt &> /dev/null
 	then
@@ -17,9 +22,12 @@ checkRoot() {
 	fi
 }
 
-echo "getcheckra1n.xyz - Easily install and run checkra1n without hassle."
-echo "Made by Splat and OPtimal"
-echo ""
+echo "getra1n.xyz - Easily install and run checkra1n without hassle."
+echo -n "Made by:"
+for i in $appDevs; do                                                                                                          
+    echo -n " $i"
+done 
+echo "\n"
 echo "Starting checks:"
 echo "Checking if the system is debian-based..."
 checkDeb
