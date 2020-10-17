@@ -25,7 +25,7 @@ checkRoot() {
 echo "getra1n.xyz - Easily install and run checkra1n without hassle."
 echo -n "Made by:"
 for i in $appDevs; do
-	https://www.jenkins.io/echo -n " $i"
+	echo -n " $i"
 done 
 echo "\n"
 echo "Starting checks:"
