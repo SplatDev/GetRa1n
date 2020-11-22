@@ -1,4 +1,4 @@
-# GetCheckRa1n
+# GetRa1n
 Easily install CheckRa1n
 
 # Requirements
